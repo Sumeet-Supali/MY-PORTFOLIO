@@ -1,0 +1,380 @@
+/* Reset some default styles for consistency */
+body{
+    margin: 0;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+    
+}
+.about{
+  margin-top: 10%;
+    height: 110vh;
+    width: 100%;
+    
+}
+
+
+
+.Projects{
+    margin-top: 10%;
+    height: 100vh;
+    width: 100%;
+    padding: 5px 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(88,9,121,1) 100%, rgba(0,212,255,1) 100%);   
+}
+
+.myskills{
+    width: 100%;
+    height: 120vh;
+    background-color: #493240;
+    margin-top: 10%;
+}
+
+.contact{
+    width: 100%;
+    height: 120vh;
+    background-color: #3f2b96;
+    margin-top: 10%;
+}
+
+
+
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #333;*/
+    padding: 20px;
+    color: white;
+}
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff7f50; /* Change to your desired hover color */
+}
+
+
+/*content*/
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content h1{
+    font-size: 55px;
+    padding-top: 115px;
+}
+.content h1 span{
+    color: #e5ff50;
+}
+
+/*notes*/
+.btnbox {
+  background-color: #ff7f50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7px;
+}
+.btnbox button{
+  color: #ded5d5;
+}
+.btnbox button:hover{
+  color: rgb(255, 242, 242);
+  background-color: #2d2a29;
+}
+.about {
+    position: relative;
+    color: white;
+    padding: 100px 0;
+    
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-info {
+    background-color: #343629;
+    border-radius: 6px;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about h2 {
+  
+    text-align: center;
+    font-size: 45px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.about-gif {
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 22%;
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.animated-heading {
+    animation: fadeInOut 5s ease-in-out infinite;
+}
+
+/*projects section*/
+.box{
+    
+    width: 80%; /* Adjust the width as needed */
+    height: 600px; /* Adjust the height as needed */
+    margin: 100px auto;
+}
+
+/* Add this CSS to your existing stylesheet or in a <style> tag within the <head> of your HTML */
+
+/* Custom styles for carousel control arrows */
+
+/* Custom styles for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white; 
+    color: black; 
+    width: 40px; 
+    height: 40px; 
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black; 
+}
+
+
+.carousel-control-prev.active,
+.carousel-control-next.active {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black; 
+}
+/* Custom styles for dark text */
+.telling {
+    color: #ded5d5; 
+    background-color: #343629;
+}
+/* Button styles */
+.beautiful-button {
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    background-color: white;
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.beautiful-button:hover {
+    background-color:#a4cde7; /* lighs shade on hover */
+}
+.myprojects{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+
+.myskills{
+    font-size: 55px;
+    color: #ded5d5;
+    text-align: center;
+}
+
+/*skills*/
+/* Grid container styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add margin to separate from the heading */
+}
+
+/* Skill item styles */
+.skill {
+    background-color: #f0f0f0; /* Add your preferred background color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill h2{
+    color: black;
+}
+.skill img:hover {
+    transform: scale(1.1);
+  }
+.skill img {
+transition: transform 0.2s ease-in-out;
+}
+
+/*contact*/
+
+  
+  .contact_tital {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+.contact {
+    display: grid;
+    place-items:center;
+    width: 100%;
+    color: white;
+    
+  }
+
+.container{
+  border-radius: 7px;
+  background-color: #240b36;
+  height: 350px;
+  text-align: center;
+  width: 500px;
+  color: #ffffff;
+}
+
+input[type="text"],textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+input[type="button"]{
+  background-color: #343629;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+
+}
+input[type="button"]:hover{
+  background-color: #ff7f50;
+}
+  .avatar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .avatar img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  
+  /*scroll btn*/
+  .scroll-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .scroll-up-btn.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
